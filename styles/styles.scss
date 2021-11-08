@@ -1,0 +1,24 @@
+@import 'setup';
+
+
+$firstColor: #16bac5;
+$secondColor: #5fbff9;
+$thirdColor: #efe9f4;
+$fourthColor: #171d1c;
+
+$mainFont: 'Karla', sans-serif;
+$subFont: 'Open Sans', sans-serif;
+
+html {
+    font-size: 20px;
+}
+
+header {
+    background-color: $firstColor;
+    font-family: $mainFont;
+    background-image: url(../assets/heroImage.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: bottom center;
+    height: 70vh;
+}
