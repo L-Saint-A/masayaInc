@@ -246,11 +246,59 @@ html {
 }
 
 header {
-  background-color: #16bac5;
+  background-color: #098C9A;
   font-family: "Karla", sans-serif;
   background-image: url(../assets/heroImage.jpg);
   background-repeat: no-repeat;
   background-attachment: fixed;
-  background-position: bottom center;
-  height: 70vh;
+  background-position: center bottom;
+  background-size: cover;
+  height: 80vh;
+}
+header .wrapper {
+  height: 100%;
+}
+
+.navBar {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  position: fixed;
+  width: 100%;
+  background: #171d1cc4;
+  height: 80px;
+}
+.navBar ul {
+  display: flex;
+  list-style: none;
+}
+.navBar ul li a {
+  text-decoration: none;
+  color: #098C9A;
+  padding: 0 13px;
+}
+
+.headText {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+.headText div {
+  background: #19130898;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  width: 42%;
+  height: 34%;
+}
+.headText div h1, .headText div p {
+  padding: 0;
+  margin: 0;
+}
+
+main {
+  background-color: #f4f1f8;
 }/*# sourceMappingURL=styles.css.map */
