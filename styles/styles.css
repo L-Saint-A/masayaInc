@@ -285,7 +285,7 @@ header .wrapper p {
 .navBar ul li a {
   text-decoration: none;
   color: #f4f1f8;
-  padding: 0 13px;
+  padding: 0 28px;
 }
 
 .headText {
@@ -301,8 +301,8 @@ header .wrapper p {
   flex-direction: column;
   justify-content: center;
   text-align: center;
-  width: 42%;
-  height: 34%;
+  width: 44%;
+  height: 35%;
   border-top-right-radius: 25px;
 }
 .headText div h1, .headText div p {
@@ -310,9 +310,12 @@ header .wrapper p {
   padding: 0;
   margin: 0;
 }
-.headText div::before {
+.headText div p {
+  margin-bottom: 20px;
+}
+.headText div::after {
   content: "";
-  border-top: 8px solid #f4f1f8;
+  border-top: 6px solid #f4f1f8;
   width: 40%;
 }
 
@@ -321,7 +324,7 @@ section.about {
   border-top: 60px white solid;
   -o-border-image: linear-gradient(45deg, #5CC8FF, #33c9dd) 1;
      border-image: linear-gradient(45deg, #5CC8FF, #33c9dd) 1;
-  padding: 60px 0;
+  padding: 72px 0;
 }
 section.about .wrapper {
   display: flex;
@@ -331,16 +334,32 @@ section.about .wrapper div {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  border: 2px hotpink solid;
 }
 section.about .wrapper .aboutText {
   flex-basis: 60%;
+}
+section.about .wrapper .aboutText h3 {
+  font-family: "Karla", sans-serif;
+  font-size: 2.2rem;
+}
+section.about .wrapper .aboutText p {
+  font-family: "Open Sans", sans-serif;
+  padding: 36px 62px 40px 16px;
+}
+section.about .wrapper .aboutText::after {
+  content: "";
+  border-bottom: 8px solid #5CC8FF;
+  width: 40%;
 }
 section.about .wrapper .aboutPic {
   flex-basis: 40%;
   text-align: center;
 }
 section.about .wrapper .aboutPic img {
+  border-top-right-radius: 25px;
+  border-bottom-left-radius: 25px;
+  margin: 16px;
   width: 100%;
   height: auto;
+  box-shadow: #5CC8FF -12px 12px;
 }/*# sourceMappingURL=styles.css.map */

@@ -52,7 +52,7 @@ header {
             a{
             text-decoration: none;
             color: $thirdColor;
-            padding: 0 13px;
+            padding: 0 28px;
             }
         }
     }
@@ -73,18 +73,21 @@ header {
         flex-direction: column;
         justify-content: center;
         text-align: center;
-        width: 42%;
-        height: 34%;
+        width: 44%;
+        height: 35%;
         border-top-right-radius: 25px;
         h1, p {
             color: $thirdColor;
             padding: 0;
             margin: 0;
         }
-        &::before {
+        p {
+            margin-bottom: 20px;
+        }
+        &::after {
             content: '';
-            border-top: 8px solid $thirdColor;
-            width: 40%;;
+            border-top: 6px solid $thirdColor;
+            width: 40%;
         }
     }
 }
@@ -93,7 +96,7 @@ section.about {
     background: $thirdColor;
     border-top: 60px white solid;
     border-image: linear-gradient(45deg, $fourthColor, #33c9dd) 1;
-    padding: 60px 0;
+    padding: 72px 0;
     .wrapper {
         display: flex;
         div {
@@ -101,17 +104,34 @@ section.about {
             flex-direction: column;
             align-items: center;
             justify-content: center;
-            border: 2px hotpink solid;
         }
         .aboutText {
-            flex-basis: 60% ;
+            flex-basis: 60%;
+            h3 {
+                font-family: $mainFont;
+                font-size: 2.2rem;
+            }
+            p {
+                font-family: $subFont;
+                padding: 36px 62px 40px 16px;
+            }
+            &::after {
+                content: '';
+                border-bottom: 8px solid $fourthColor;
+                width: 40%;
+            }
         }
         .aboutPic {
             flex-basis: 40%;
             text-align: center;
+
             img {
+                border-top-right-radius: 25px;
+                border-bottom-left-radius: 25px;
+                margin: 16px;
                 width: 100%;
                 height: auto;
+                box-shadow: $fourthColor -12px 12px;
             }
         }
     }
