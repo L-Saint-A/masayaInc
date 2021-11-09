@@ -4,8 +4,9 @@
 $firstColor: #c9f2c7;
 $secondColor: #dff2e0;
 $thirdColor: #f4f1f8;
-$fourthColor: #098C9A;
+$fourthColor: #5CC8FF;
 $fifthColor: #191308;
+$sixthColor: #33c9dd;
 
 $mainFont: 'Karla', sans-serif;
 $subFont: 'Open Sans', sans-serif;
@@ -24,6 +25,13 @@ header {
     height: 80vh;
     .wrapper {
         height: 100%;
+        color: $secondColor;
+        h1 {
+            font-size: 4rem;
+        }
+        p{
+            font-size: 1.4rem;
+        }
     }
 }
 .navBar {
@@ -32,16 +40,18 @@ header {
     align-items: center;
     position: fixed;
     width: 100%;
-    background: #171d1cc4;
+    background: $fifthColor;
     height: 80px;
+    h2 {
+        color: $fourthColor;
+    }
     ul {
         display: flex;
         list-style: none;
-
         li{
             a{
             text-decoration: none;
-            color: $fourthColor;
+            color: $thirdColor;
             padding: 0 13px;
             }
         }
@@ -54,23 +64,55 @@ header {
     align-items: center;
     height: 100%;
     div {
-        background: #19130898;
+        background: linear-gradient(
+            0deg,
+            rgb(0 0 0 / .7),
+            rgb(0 0 0 / .6)
+        );
         display: flex;
         flex-direction: column;
         justify-content: center;
         text-align: center;
         width: 42%;
         height: 34%;
+        border-top-right-radius: 25px;
         h1, p {
+            color: $thirdColor;
             padding: 0;
             margin: 0;
+        }
+        &::before {
+            content: '';
+            border-top: 8px solid $thirdColor;
+            width: 40%;;
         }
     }
 }
 
-
-
-
-main {
-    background-color: $thirdColor;
+section.about {
+    background: $thirdColor;
+    border-top: 60px white solid;
+    border-image: linear-gradient(45deg, $fourthColor, #33c9dd) 1;
+    padding: 60px 0;
+    .wrapper {
+        display: flex;
+        div {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            border: 2px hotpink solid;
+        }
+        .aboutText {
+            flex-basis: 60% ;
+        }
+        .aboutPic {
+            flex-basis: 40%;
+            text-align: center;
+            img {
+                width: 100%;
+                height: auto;
+            }
+        }
+    }
 }
