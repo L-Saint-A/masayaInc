@@ -232,7 +232,7 @@ html {
 
 .wrapper {
   max-width: 1200px;
-  width: 85%;
+  width: 90%;
   margin: 0 auto;
 }
 
@@ -268,7 +268,8 @@ header .wrapper p {
 
 .navBar {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
+  padding: 0 100px;
   align-items: center;
   position: fixed;
   width: 100%;
@@ -282,10 +283,17 @@ header .wrapper p {
   display: flex;
   list-style: none;
 }
+.navBar ul li {
+  padding: 0 28px;
+}
 .navBar ul li a {
   text-decoration: none;
   color: #f4f1f8;
-  padding: 0 28px;
+}
+.navBar ul li a:hover {
+  color: #5CC8FF;
+  box-shadow: #5CC8FF 0 4px;
+  transition: 0.3s ease-in-out;
 }
 
 .headText {
@@ -301,8 +309,9 @@ header .wrapper p {
   flex-direction: column;
   justify-content: center;
   text-align: center;
-  width: 44%;
-  height: 35%;
+  width: 54%;
+  min-width: 648px;
+  height: 36%;
   border-top-right-radius: 25px;
 }
 .headText div h1, .headText div p {
@@ -310,13 +319,17 @@ header .wrapper p {
   padding: 0;
   margin: 0;
 }
+.headText div h1 {
+  font-size: 5rem;
+}
 .headText div p {
-  margin-bottom: 20px;
+  margin-bottom: 28px;
+  font-size: 2rem;
 }
 .headText div::after {
   content: "";
   border-top: 6px solid #f4f1f8;
-  width: 40%;
+  width: 44%;
 }
 
 section.about {
@@ -324,7 +337,7 @@ section.about {
   border-top: 60px white solid;
   -o-border-image: linear-gradient(45deg, #5CC8FF, #33c9dd) 1;
      border-image: linear-gradient(45deg, #5CC8FF, #33c9dd) 1;
-  padding: 72px 0;
+  padding: 66px 0;
 }
 section.about .wrapper {
   display: flex;

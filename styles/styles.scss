@@ -1,6 +1,5 @@
 @import 'setup';
 
-
 $firstColor: #c9f2c7;
 $secondColor: #dff2e0;
 $thirdColor: #f4f1f8;
@@ -14,6 +13,7 @@ $subFont: 'Open Sans', sans-serif;
 html {
     font-size: 20px;
 }
+
 header {
     background-color: $fourthColor;
     font-family: $mainFont;
@@ -34,9 +34,11 @@ header {
         }
     }
 }
+
 .navBar {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
+    padding: 0 100px;
     align-items: center;
     position: fixed;
     width: 100%;
@@ -49,14 +51,21 @@ header {
         display: flex;
         list-style: none;
         li{
+            padding: 0 28px;
             a{
             text-decoration: none;
             color: $thirdColor;
-            padding: 0 28px;
+
+            &:hover {
+                color: $fourthColor;
+                box-shadow: $fourthColor 0 4px;
+                transition: 0.3s ease-in-out;
+                }
             }
         }
     }
 }
+
 .headText {
     display: flex;
     flex-direction: column;
@@ -73,21 +82,26 @@ header {
         flex-direction: column;
         justify-content: center;
         text-align: center;
-        width: 44%;
-        height: 35%;
+        width: 54%;
+        min-width: 648px;
+        height: 36%;
         border-top-right-radius: 25px;
         h1, p {
             color: $thirdColor;
             padding: 0;
             margin: 0;
         }
+        h1 {
+            font-size: 5rem;
+        }
         p {
-            margin-bottom: 20px;
+            margin-bottom: 28px;
+            font-size: 2rem;
         }
         &::after {
             content: '';
             border-top: 6px solid $thirdColor;
-            width: 40%;
+            width: 44%;
         }
     }
 }
@@ -96,7 +110,7 @@ section.about {
     background: $thirdColor;
     border-top: 60px white solid;
     border-image: linear-gradient(45deg, $fourthColor, #33c9dd) 1;
-    padding: 72px 0;
+    padding: 66px 0;
     .wrapper {
         display: flex;
         div {
@@ -124,7 +138,6 @@ section.about {
         .aboutPic {
             flex-basis: 40%;
             text-align: center;
-
             img {
                 border-top-right-radius: 25px;
                 border-bottom-left-radius: 25px;
@@ -136,3 +149,4 @@ section.about {
         }
     }
 }
+
