@@ -155,7 +155,7 @@ section.credits {
     background-color: $thirdColor;
     .wrapper {
         display: flex;
-        justify-content: space-between;
+        justify-content: space-around;
         div {
             display: flex;
             flex-direction: column;
@@ -164,10 +164,6 @@ section.credits {
             line-height: 28.2px;
             width: 22%;
             padding: 44px 6px;
-            &:hover {
-                background-color: hotpink;
-                transition:  ease-in-out 0.4s;
-            }
             i {
                 font-size: 86px;
                 padding: 52px 0;
@@ -177,5 +173,13 @@ section.credits {
                 font-family: $subFont;
             }
         }
+    }
+}
+section.contact {
+    form input  {
+        font-family: $subFont;
+    }
+    form textarea {
+        resize: none;
     }
 }

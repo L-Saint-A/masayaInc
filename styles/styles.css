@@ -383,7 +383,7 @@ section.credits {
 }
 section.credits .wrapper {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
 }
 section.credits .wrapper div {
   display: flex;
@@ -394,10 +394,6 @@ section.credits .wrapper div {
   width: 22%;
   padding: 44px 6px;
 }
-section.credits .wrapper div:hover {
-  background-color: hotpink;
-  transition: ease-in-out 0.4s;
-}
 section.credits .wrapper div i {
   font-size: 86px;
   padding: 52px 0;
@@ -405,4 +401,11 @@ section.credits .wrapper div i {
 }
 section.credits .wrapper div p {
   font-family: "Open Sans", sans-serif;
+}
+
+section.contact form input {
+  font-family: "Open Sans", sans-serif;
+}
+section.contact form textarea {
+  resize: none;
 }/*# sourceMappingURL=styles.css.map */
