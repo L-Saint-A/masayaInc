@@ -405,7 +405,10 @@ section.credits .wrapper div p {
 
 section.contact form input {
   font-family: "Open Sans", sans-serif;
+  color: #666;
 }
 section.contact form textarea {
   resize: none;
+  font-family: "Open Sans", sans-serif;
+  color: #666;
 }/*# sourceMappingURL=styles.css.map */

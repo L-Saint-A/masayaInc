@@ -176,10 +176,14 @@ section.credits {
     }
 }
 section.contact {
+
     form input  {
         font-family: $subFont;
+        color: #666;
     }
     form textarea {
         resize: none;
+        font-family: $subFont;
+        color: #666;
     }
 }
